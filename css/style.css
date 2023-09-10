@@ -1,41 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Libre+Franklin:wght@100&family=Raleway:wght@200&family=Wix+Madefor+Display&display=swap');
-body{
+body {
     background-color: rgb(0, 0, 0);
 }
-.title {
-  font-family: 'Wix Madefor Display', sans-serif;
-  text-align: center;
-  font-size: 45px;
-  animation: title 60s infinite;
-  color: rgb(252, 252, 252);
-  }
-.project-div{
-  outline: 2px solid #fff;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 38%;	
-  height: auto;
-  margin: 0 auto;
-  padding: 0.1%;
+.center {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.project-title{
-  color:white;
-  font-family: 'Wix Madefor Display', sans-serif;
-  font-size: 24px;
-  
+.project {
+    border: 2px solid #fff;
+    padding: 25px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    width: 30%;
+    border-radius: 10px;
+}
+.project:hover {
+  	background: #222;
+}
+.project span {
+  	font-size: 24px;
+}
+.title {
+    font-family: 'Wix Madefor Display', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    animation: title 60s infinite;
+    color: rgb(252, 252, 252);
 }
 .text{
-    color:white;
+    color: white;
     font-size: 20px;
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
     max-width: 70%;
-    margin: auto
+    margin: auto;
 }
 .text2{
-    color:white;
+    color: white;
     font-size: 30px;
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
@@ -43,9 +48,9 @@ body{
 }
 
 button { 
-  font-family: 'Wix Madefor Display', sans-serif;
-    width:160px; 
-    height:70px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    /*width: 160px; 
+    height: 70px;*/
     border: none;
     outline: none;
     color: #fff;
@@ -56,14 +61,15 @@ button {
     border-radius: 10px;
     font-size: 24px;
     margin: 6px;
-  }
+    padding: 0.8em;
+}
   
-  button:before {
+button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -73,21 +79,21 @@ button {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-  }
+}
   
-  button:active {
-    color: #000
-  }
+button:active {
+    color: #000;
+}
   
-  button:active:after {
+button:active:after {
     background: transparent;
-  }
+}
   
-  button:hover:before {
+button:hover:before {
     opacity: 1;
-  }
+}
   
-  button:after {
+button:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -97,13 +103,13 @@ button {
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
+}
   
-  @keyframes glowing {
+@keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-  }
+}
 
 
 
@@ -120,32 +126,47 @@ button {
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
 } */
-/* анимация */
 a {
     text-decoration: none;
     color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+span {
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 ol {
-  list-style: none;
-  margin: auto;
-  padding: 0;
+    margin: auto;
+    padding: 0;
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+li {
+	font-size: 18px;
+}
+.social-icons {
+	flex-direction: row;
 }
 .social-icons li {
-  vertical-align: top;
-  display: inline;
-  font-size: 40px;
-  margin: 5px;
+    vertical-align: top;
+    display: inline;
+    font-size: 40px;
+    margin: 5px;
 }
 .social-icons-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .social-icon {
-  transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 .social-icon:hover {
-  color: #ccc;
-  transition-duration: 0.2s;
+    color: #ccc;
+    transition-duration: 0.2s;
 }
