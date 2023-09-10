@@ -137,13 +137,11 @@ span {
 }
 ol {
     margin: auto;
-    padding: 0;
     color: #fff;
     font-family: 'Wix Madefor Display', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    list-style-position: inside;
+    padding: 0;
 }
 li {
 	font-size: 18px;
