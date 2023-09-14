@@ -10,7 +10,7 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 1em;
     align-items: center;
     background: #000000;
     margin-top: 10px;
