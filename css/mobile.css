@@ -2,4 +2,7 @@
     .project {
         width: 70%;
     }
+    .social-icons li {
+        font-size: 25px;
+    }
 }
