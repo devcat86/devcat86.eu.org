@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Libre+Franklin:wght@100&family=Raleway:wght@200&family=Wix+Madefor+Display&display=swap');
 body {
     background-color: rgb(0, 0, 0);
-} 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .center {
 	display: flex;
     justify-content: center;
     align-items: center;
+}
+.warning {
+    width: fit-content;
+    background: #482500;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    max-width: 95%;
 }
 footer {
     display: flex;
@@ -18,7 +31,10 @@ footer {
     border-radius: 10px;
 
 }
-.text-nav{
+h1, h2, h3 {
+    margin: 20px 0;
+}
+.text-nav {
     color: white;
     font-size: 20px;
     text-align: center;
@@ -34,11 +50,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-size: 18px;
-    width: 30%;
+    width: 35%;
     border-radius: 10px;
 }
 .project:hover {
   	background: #222;
+}
+.project:active {
+    background: #252525;
 }
 .project span {
   	font-size: 24px;
@@ -50,15 +69,13 @@ footer {
     animation: title 60s infinite;
     color: rgb(252, 252, 252);
 }
-.text{
+.text, p {
     color: white;
     font-size: 20px;
     text-align: center;
     font-family: 'Wix Madefor Display', sans-serif;
-    max-width: 70%;
-    margin: auto;
 }
-.text2{
+.text2 {
     color: white;
     font-size: 30px;
     text-align: center;
@@ -83,7 +100,7 @@ button {
     padding: 0.8em;
 }
   
-button:before{
+button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
