@@ -1,4 +1,4 @@
-fetch('../nav/footer.html')
+fetch('./nav/footer.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#footer");
