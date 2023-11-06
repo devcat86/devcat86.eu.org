@@ -40,7 +40,6 @@ h1, h2, h3 {
     color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Wix Madefor Display', sans-serif;
     max-width: 70%;
     margin: auto;
 }
@@ -55,10 +54,10 @@ h1, h2, h3 {
     width: 45%;
     border-radius: 10px;
 }
-.project:hover {
+.project:hover, .button:hover {
   	background: #222;
 }
-.project:active {
+.project:active, .button:hover {
     background: #252525;
 }
 .project span {
@@ -75,95 +74,27 @@ h1, h2, h3 {
     color: white;
     font-size: 20px;
     text-align: center;
+    
+}
+.text, p, .text2, button, .title, .text-nav{
     font-family: 'Wix Madefor Display', sans-serif;
 }
 .text2 {
     color: white;
     font-size: 30px;
     text-align: center;
-    font-family: 'Wix Madefor Display', sans-serif;
     margin-left: 16px;
 }
-
-button { 
-    font-family: 'Wix Madefor Display', sans-serif;
-    /*width: 160px; 
-    height: 70px;*/
-    border: none;
-    outline: none;
+button{
     color: #fff;
     background: #000000;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
     border-radius: 10px;
+    border: 2px solid #fff;
     font-size: 24px;
     margin: 6px;
-    padding: 0.8em;
+    padding: 16px;
 }
-  
-button:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 15s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-  
-button:active {
-    color: #000;
-}
-  
-button:active:after {
-    background: transparent;
-}
-  
-button:hover:before {
-    opacity: 1;
-}
-  
-button:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-  
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-
-/* button {
-    border-radius: 8px;
-    width:160px; 
-    height:70px;
-    transition-duration: 0.3s;
-    border: 1px solid rgb(0, 0, 0);
-    opacity: 0.9;
-    text-align: center;
-    
-    
-    background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
-} */
+/* это я не писал оно само */
 a {
     text-decoration: none;
     color: #fff;
